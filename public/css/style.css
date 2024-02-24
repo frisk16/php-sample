@@ -1,0 +1,82 @@
+
+body {
+    background-color: #eee;
+}
+
+main {
+    margin: 32px 0;
+}
+
+.form-group {
+    margin-top: 16px !important;
+    justify-content: center;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+.form-group label + span {
+    color: #f00;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-left: 16px;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    height: 48px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2.5px solid #777;
+    background-color: #eee;
+}
+.form-group textarea {
+    width: 100%;
+    height: 160px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2.5px solid #777;
+    background-color: #eee;
+}
+.form-group .form-error-msg {
+    color: #f00;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.comment-card {
+    background-color: #fff;
+    position: relative;
+    margin-top: 16px;
+    border: 1px solid #000;
+    padding: 16px;
+}
+.comment-card > .comment-name {
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+.comment-card > .comment-area {
+    font-size: 0.9em;
+    padding-left: 16px;
+}
+.comment-card > .comment-time {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 6px;
+    right: 10px;
+    color: #070;
+}
+.comment-card > .comment-time > span {
+    color: #000;
+}
+
+#logout-btn {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    bottom: 0;
+    right: 16px;
+    transition: opacity 0.3s, bottom 0.3s, z-index 0.3s;
+}
