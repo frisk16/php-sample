@@ -17,7 +17,7 @@ spl_autoload_register(function($class) {
 });
 
 define('PDO_DATA', Sql::pdo());
-define('TOP_URL', 'http://'.$_SERVER['HTTP_HOST'].'/php/public/');
+define('TOP_URL', 'http://'.$_SERVER['HTTP_HOST'].'/php-sample/public/');
 
 $msg = PostMapping::action();
 Csrf::token();

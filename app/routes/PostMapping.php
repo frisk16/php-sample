@@ -10,11 +10,11 @@ class PostMapping
 
             switch($_SERVER['REQUEST_URI']) {
     
-                case '/php/public/?comments=add':
+                case '/php-sample/public/?comments=add':
                     CommentController::add();
                     break;
 
-                case '/php/public/login.php?action=login':
+                case '/php-sample/public/login.php?action=login':
                     $msg = LoginController::login();
                     return $msg;
                     break;
